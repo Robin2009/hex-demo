@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+  
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #282828;;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: purple;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/* Box */
+.uiNlKk7UqEVdL5wxF70vI {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    border-color: transparent;
+    overflow: auto;
+    background: transparent;
+    border-radius: 4px;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+    background: transparent;
+}
+
+._3GS5zteXhnWZITBUva_bBT {
+    width: 100%;
+}
+
+.ant-input{
+    position: relative;
+    display: inline-block;
+    padding: 4px 7px;
+    width: 100%;
+    height: 28px;
+    cursor: text;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000;
+    background-color: rgba(180, 180, 180, 0.938);
+    background-image: none;
+    border: 0px; /*solid #d9d9d9;*/
+    border-radius: 4px;
+    transition: all .3s;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+.ant-card-head-title {
+    font-size: 14px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(0,0,0,.85);
+    font-weight: 500;
+}
+.ourlink{
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    bottom: 20px;
+}

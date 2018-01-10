@@ -1,0 +1,25 @@
+{
+  "name": "intern-demos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch server --watch public/ server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robin2009/intern-demos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robin2009/intern-demos/issues"
+  },
+  "homepage": "https://github.com/Robin2009/intern-demos#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "reload": "^2.2.2"
+  }
+}
