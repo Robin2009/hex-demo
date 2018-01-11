@@ -7,9 +7,11 @@ var app = express();
 var reload = require('reload');
 var publicDir = path.join(__dirname, 'public')
  var app = express();
+
  app.get('/',function (req, res) {
-     res.sendFile(path.join(publicDir, '/html/index.html'))
+     res.sendFile(path.join(publicDir, '/html/login.html'))
  })
+
  app.use(express.static(path.join(__dirname, 'public')));
  app.set('port',process.env.PORT || 3000)
  app.use(bodyParser.json())

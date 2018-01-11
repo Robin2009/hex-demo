@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch server --watch public/ server"
+    "start": "nodemon --ignore node_modules/ -e js,html,css,json server"
   },
   "repository": {
     "type": "git",
