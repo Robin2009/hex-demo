@@ -1,6 +1,6 @@
 function setPosMap() {
     window._posMap = [];
-    var hexs = $('.hexagon');
+    var hexs = $('#avatars>#grid>li>div.hexagon');
     if (hexs.length) {
         $.each(hexs, function (i, hex) {
             var t = {};
@@ -32,22 +32,22 @@ window._clockPositions = [
 ];
 
 window._mapClockPositionBackgroundPosition = {
-    0: -2147,
-    1: -1789,
-    2: -1966,
+    0: -2249,
+    1: -1875,
+    2: -2062,
     3: 0,
-    4: -182,
-    5: -355,
-    6: -540,
-    7: -720,
-    8: -897,
-    9: -1078,
-    10: -1253,
-    11: -1434,
-    12: -1613,
+    4: -190,
+    5: -375,
+    6: -564,
+    7: -752,
+    8: -938,
+    9: -1127,
+    10: -1313,
+    11: -1500,
+    12: -1688,
 }
 
-function redrawAvatar(cursorPositionX,cursorPositionY) {
+function redrawAvatar(cursorPositionX, cursorPositionY) {
     if (window._posMap.length) {
         $.each(window._posMap, function (i, avatar) {
             var p = getClockPosition(avatar.cx, avatar.cy, cursorPositionX, cursorPositionY);
@@ -86,33 +86,33 @@ window._myCurrentSteps = 0;
 
 $(window).mousemove(function (event) {
     if (window._currentNamecardMember == null && window._myCurrentSteps++ >= window._myMaxStepCount) {
-        redrawAvatar(event.pageX,event.pageY);
+        redrawAvatar(event.pageX, event.pageY);
         window._myCurrentSteps = 0;
     }
 });
 
 // regist click item event
-var items = $('#grid>li>.hexagon');
+var items = $('#avatars>#grid>li>div.hexagon')
 $.each(items, function (i, item) {
     $(item).on('click', showTitle);
 });
 
 window._currentNamecardMember = null;
-function showTitle(event) {    
-    
-    if(window._currentNamecardMember){
+function showTitle(event) {
+
+    if (window._currentNamecardMember) {
         window._currentNamecardMember.removeClass('show-namecard');
-    } 
+    }
 
     var thisItem = $(this);
     var member = thisItem.find('.member:first');
-    if(window._currentNamecardMember && member.attr('id') === window._currentNamecardMember.attr('id')){
+    if (window._currentNamecardMember && member.attr('id') === window._currentNamecardMember.attr('id')) {
         window._currentNamecardMember = null;
-    }else{
+    } else {
         member.addClass('show-namecard');
         window._currentNamecardMember = member;
-        redrawAvatar(event.pageX,event.pageY);
-    } 
+        redrawAvatar(event.pageX, event.pageY);
+    }
 }
 
 // init

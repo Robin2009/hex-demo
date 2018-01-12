@@ -1,35 +1,10 @@
-body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-    display: block;  
-}
-
-
-#container {
-    margin: 0 auto;
-    width: 700px;
-}
-
-#avatars {
-    padding: 50px;
-}
-
-#discription {
-    position: relative;
-    /* margin: auto; */
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
+/* current page */
 
 #grid {
-    /* position: relative;
-    width: 40%;
-    margin: 100px auto;
-    padding: 0; */
+    width:90%;
+    position: relative;
+    margin: 50px 0 100px 0;
+    padding: 0;
     /* Clears unordered list default of 40px */
 }
 
@@ -103,15 +78,15 @@ canvas {
     background-position-x: center;
 }
 
-.namecard{
+.namecard {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.2s linear;
 }
 
-.hexagon .member.show-namecard +.namecard{
+.hexagon .member.show-namecard+.namecard {
     visibility: visible;
-    opacity: 1;   
+    opacity: 1;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -119,23 +94,23 @@ canvas {
     top: 0;
 }
 
-.namecard .name{
+.namecard .name {
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
     top: 40px;
-    color:white;
+    color: white;
     /* margin:20px auto 0 auto; */
 }
 
-.namecard .title{
+.namecard .title {
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
     bottom: 30px;
-    color:white;
+    color: white;
     /* margin:0 auto 20px auto; */
 }
 
@@ -175,53 +150,6 @@ canvas {
     background-image: url('../images/members/Muleke.jpg');
 }
 
-
-/* Particles */
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #282828;
-    ;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-/* ---- stats.js ---- */
-
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    -webkit-user-select: none;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
+.hexagon .member#kipanda {
+    background-image: url('../images/members/kipanda.jpg');
 }
