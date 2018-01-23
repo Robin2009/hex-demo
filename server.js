@@ -8,13 +8,15 @@ var reload = require('reload');
 var publicDir = path.join(__dirname, 'public')
  var app = express();
 
+
+ app.use(express.static(publicDir));
+ app.use(bodyParser.json())
+
  app.get('/',function (req, res) {
      res.sendFile(path.join(publicDir, '/html/login.html'))
  })
-
- app.use(express.static(path.join(__dirname, 'public')));
+ 
  app.set('port',process.env.PORT || 3000)
- app.use(bodyParser.json())
  var server = http.createServer(app)
 
  //reload lapha
